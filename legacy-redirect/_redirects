@@ -1,0 +1,3 @@
+# Redirect permanente dal vecchio indirizzo al nuovo sito.
+/ https://studiodev.pages.dev/it/ 301
+/* https://studiodev.pages.dev/:splat 301
