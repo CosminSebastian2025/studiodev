@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Locale } from "@/lib/i18n";
-import { site, name } from "@/content/site";
+import { site, siteName } from "@/content/site";
 import { LanguageSwitcher } from "./language-switcher";
 
 export function SiteHeader({ locale }: { locale: Locale }) {
@@ -13,7 +13,7 @@ export function SiteHeader({ locale }: { locale: Locale }) {
           href={`/${locale}/`}
           className="text-sm font-semibold tracking-tight text-white"
         >
-          {name}
+          {siteName}
         </Link>
         <nav className="flex items-center gap-5 text-sm text-zinc-400">
           <span className="hidden items-center gap-5 sm:flex">

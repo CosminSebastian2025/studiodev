@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { projects } from "@/content/projects";
-import { email, name, site } from "@/content/site";
+import { email, siteName, site } from "@/content/site";
 import { isLocale, locales } from "@/lib/i18n";
 
 export function generateStaticParams() {
@@ -23,7 +23,7 @@ export async function generateMetadata({
   if (!project) return {};
 
   return {
-    title: `${project.title[lang]} — ${name}`,
+    title: `${project.title[lang]} — ${siteName}`,
     description: project.tagline[lang],
     alternates: {
       canonical: `/${lang}/progetti/${slug}/`,
@@ -33,7 +33,7 @@ export async function generateMetadata({
       },
     },
     openGraph: {
-      title: `${project.title[lang]} — ${name}`,
+      title: `${project.title[lang]} — ${siteName}`,
       description: project.tagline[lang],
       url: `/${lang}/progetti/${slug}/`,
       type: "article",

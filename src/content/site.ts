@@ -3,7 +3,7 @@ import type { Locale } from "@/lib/i18n";
 export const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://cosmi-portfolio.pages.dev";
 
-export const name = "Floria Cosmin Sebastian";
+export const siteName = "StudioDev";
 export const email = "unknowguy226@gmail.com";
 
 type Copy = {
@@ -39,7 +39,7 @@ type Copy = {
 export const site: Record<Locale, Copy> = {
   it: {
     meta: {
-      title: `${name} — Portfolio`,
+      title: `${siteName} — Portfolio`,
       description:
         "Sviluppatore full-stack. Case study di un'app di dating cross-platform, una piattaforma Web + API e un password manager zero-knowledge in Rust.",
     },
@@ -94,7 +94,7 @@ export const site: Record<Locale, Copy> = {
       text: "Hai un prodotto da costruire o un sito/app da migliorare, anche solo in piccolo? Bug fix, una nuova sezione, una funzionalità veloce: scrivimi e ti rispondo con tempi e preventivo.",
       cta: "Invia una email",
     },
-    footer: `© 2026 ${name}. Costruito con Next.js, pubblicato su Cloudflare Pages.`,
+    footer: `© 2026 ${siteName}. Costruito con Next.js, pubblicato su Cloudflare Pages.`,
     caseStudy: {
       back: "Tutti i progetti",
       problem: "Il problema",
@@ -107,7 +107,7 @@ export const site: Record<Locale, Copy> = {
   },
   en: {
     meta: {
-      title: `${name} — Portfolio`,
+      title: `${siteName} — Portfolio`,
       description:
         "Full-stack developer. Case studies of a cross-platform dating app, a Web + API platform and a zero-knowledge password manager written in Rust.",
     },
@@ -162,7 +162,7 @@ export const site: Record<Locale, Copy> = {
       text: "Building a product, or need a website or app improved — even just a small fix? A bug, a new section, a quick feature: tell me what you need and I'll reply with timing and a quote.",
       cta: "Send an email",
     },
-    footer: `© 2026 ${name}. Built with Next.js, deployed on Cloudflare Pages.`,
+    footer: `© 2026 ${siteName}. Built with Next.js, deployed on Cloudflare Pages.`,
     caseStudy: {
       back: "All projects",
       problem: "The problem",

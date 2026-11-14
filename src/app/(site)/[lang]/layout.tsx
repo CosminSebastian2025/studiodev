@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
-import { name, site, siteUrl } from "@/content/site";
+import { siteName, site, siteUrl } from "@/content/site";
 import { isLocale, locales } from "@/lib/i18n";
 import "../../globals.css";
 
@@ -43,7 +43,7 @@ export async function generateMetadata({
       title: copy.meta.title,
       description: copy.meta.description,
       url: `/${lang}/`,
-      siteName: name,
+      siteName: siteName,
       locale: lang === "it" ? "it_IT" : "en_US",
       type: "website",
     },
