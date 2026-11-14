@@ -48,6 +48,6 @@ npm run deploy         # build + publish su Cloudflare Pages
 ```
 
 Cloudflare Pages serve `out/` come sito statico. Il progetto si chiama
-`cosmi-portfolio` (modificalo in `wrangler.toml` e in `package.json` se è già
+`studiodev` (modificalo in `wrangler.toml` e in `package.json` se è già
 in uso). Per un dominio personalizzato: dashboard Cloudflare → Pages →
 progetto → Custom domains.

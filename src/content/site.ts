@@ -1,7 +1,7 @@
 import type { Locale } from "@/lib/i18n";
 
 export const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://cosmi-portfolio.pages.dev";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://studiodev.pages.dev";
 
 export const siteName = "StudioDev";
 export const email = "unknowguy226@gmail.com";
